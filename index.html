@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GH NEGGO — Roupas da SHEIN</title>
+<meta name="description" content="GH NEGGO — seleção de roupas e acessórios da SHEIN.">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#0b0b0b;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(1080px,92%);margin:auto}
+header{padding:28px 0 20px;text-align:center}
+.logo{width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid #333;box-shadow:0 10px 35px #000}
+.brand{font-size:clamp(2.3rem,8vw,4.8rem);font-weight:900;letter-spacing:-.07em;margin:16px 0 4px}
+.tag{font-size:.78rem;letter-spacing:.28em;color:#aaa}
+.hero{margin:18px 0 36px;border:1px solid #242424;border-radius:24px;padding:28px;background:#111;text-align:center}
+.hero h1{margin:0;font-size:clamp(1.5rem,5vw,2.8rem)}
+.hero p{color:#aaa;line-height:1.55;max-width:620px;margin:10px auto 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:#121212;border:1px solid #242424;border-radius:22px;overflow:hidden}
+.card img{width:100%;aspect-ratio:4/5;display:block;object-fit:cover;background:#181818}
+.info{padding:18px}
+.num{font-size:.7rem;letter-spacing:.18em;color:#777}
+.name{font-size:1.05rem;font-weight:700;line-height:1.35;margin:8px 0 16px;min-height:2.8em}
+.btn{display:block;text-align:center;padding:14px;border-radius:12px;background:#f5f5f5;color:#0b0b0b;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-1px);background:#ddd}
+footer{text-align:center;color:#666;font-size:.78rem;padding:42px 0}
+
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 22px}
+.filter-btn{border:1px solid #2a2a2a;background:#121212;color:#bbb;padding:11px 18px;border-radius:999px;font-weight:800;cursor:pointer;transition:.2s}
+.filter-btn:hover{border-color:#444;color:#fff}
+.filter-btn.active{background:#f5f5f5;color:#0b0b0b;border-color:#f5f5f5}
+.card[hidden]{display:none!important}
+
+@media(max-width:650px){.grid{grid-template-columns:1fr}.logo{width:96px;height:96px}.hero{border-radius:18px}.name{min-height:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<img class="logo" src="gh_neggo_assets/logo.jpeg" alt="Logo GH NEGGO">
+<div class="brand">GH NEGGO</div>
+<div class="tag">ROUPAS DA SHEIN</div>
+</header>
+<section class="hero">
+<h1>Seu estilo. Sua escolha.</h1>
+<p>Uma seleção GH NEGGO. Toque em “Ver produto” para acessar o item diretamente na SHEIN.</p>
+</section>
+
+<div class="filters" role="tablist" aria-label="Categorias de produtos">
+  <button class="filter-btn active" type="button" data-filter="todos" aria-selected="true">TODOS</button>
+  <button class="filter-btn" type="button" data-filter="roupas" aria-selected="false">ROUPAS</button>
+  <button class="filter-btn" type="button" data-filter="acessorios" aria-selected="false">ACESSÓRIOS</button>
+</div>
+
+<section class="grid">
+<article class="card" data-category="roupas"><img src="gh_neggo_assets/produto1.jpeg" alt="Moletom cinza com capuz e zíper"><div class="info"><div class="num">PRODUTO 01</div><div class="name">Moletom com Capuz Oversized com Zíper</div><a class="btn" href="https://onelink.shein.com/50/60vtoq44wq3k?ismg_ol=CBE7BRcSpYA_01_KOC-C" target="_blank" rel="noopener noreferrer">VER PRODUTO</a></div></article>
+<article class="card" data-category="acessorios"><img src="gh_neggo_assets/produto2.jpeg" alt="Bolsa de peito bege"><div class="info"><div class="num">PRODUTO 02</div><div class="name">Bolsa de Peito Masculina Esportiva Casual</div><a class="btn" href="https://onelink.shein.com/50/60vtqn676rk0?ismg_ol=Kxl4ceXpgGz_01_KOC-C" target="_blank" rel="noopener noreferrer">VER PRODUTO</a></div></article>
+<article class="card" data-category="roupas"><img src="gh_neggo_assets/produto3.jpeg" alt="Camiseta branca estampada"><div class="info"><div class="num">PRODUTO 03</div><div class="name">Camiseta Branca Estampada</div><a class="btn" href="https://onelink.shein.com/50/60vtsad59p29?ismg_ol=L6YJ0oqjSi6_01_KOC-C" target="_blank" rel="noopener noreferrer">VER PRODUTO</a></div></article>
+<article class="card" data-category="roupas"><img src="gh_neggo_assets/produto4.jpeg" alt="Calça jeans preta"><div class="info"><div class="num">PRODUTO 04</div><div class="name">Calça Jeans Casual Preta</div><a class="btn" href="https://onelink.shein.com/50/60vttbuppghh?ismg_ol=KoDN2vfSDUG_01_KOC-C" target="_blank" rel="noopener noreferrer">VER PRODUTO</a></div></article>
+<article class="card" data-category="roupas"><img src="gh_neggo_assets/produto5.jpeg" alt="Moletom cinza estampado"><div class="info"><div class="num">PRODUTO 05</div><div class="name">Moletom Oversized Cinza Estampado</div><a class="btn" href="https://onelink.shein.com/50/60vtw4hag947?ismg_ol=4eU9x7rqsNh_01_KOC-C" target="_blank" rel="noopener noreferrer">VER PRODUTO</a></div></article>
+</section>
+<footer>GH NEGGO · ROUPAS DA SHEIN</footer>
+</div>
+
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const productCards = document.querySelectorAll('.card[data-category]');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const selected = button.dataset.filter;
+
+    filterButtons.forEach(btn => {
+      const active = btn === button;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    productCards.forEach(card => {
+      card.hidden = selected !== 'todos' && card.dataset.category !== selected;
+    });
+  });
+});
+</script>
+
+</body>
+</html>
